@@ -1,5 +1,5 @@
 .home {
-  position: relative;
+  margin-top: -14px;
 }
 
 .bgimg {
@@ -11,4 +11,16 @@
 .head {
   text-align: center;
   font-size: 50px;
+}
+
+.card {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImg {
+  width: 70%;
 }

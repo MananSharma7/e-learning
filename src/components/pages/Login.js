@@ -11,6 +11,18 @@ const Login = () => {
   const auth = useAuth();
   const navigate = useNavigate();
 
+  if (auth.user) {
+    return (
+      <div className="ui container">
+        <h3>
+          You are already logged in!
+        </h3>
+        <button style={{ marginTop: "10px" }} className="ui red button" onClick={() => auth.logout()}>Logout</button>
+      </div>
+
+    );
+  }
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
