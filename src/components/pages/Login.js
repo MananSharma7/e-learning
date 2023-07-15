@@ -13,7 +13,7 @@ const Login = () => {
 
   if (auth.user) {
     return (
-      <div className="ui container">
+      <div className="ui container" style={{ minHeight: "77vh" }}>
         <h3>
           You are already logged in!
         </h3>
@@ -58,7 +58,7 @@ const Login = () => {
   };
 
   return (
-    <div className="ui container">
+    <div className="ui container" style={{ minHeight: "77vh" }}>
       <h2 className="ui header">Login</h2>
       <form className="ui middle floated form segment" style={{ width: "40%" }}>
         <div className="field">

@@ -8,7 +8,7 @@ const Dashboard = () => {
     auth.logout();
   }
   return (
-    <div className="ui container">
+    <div className="ui container" style={{ minHeight: "77vh" }}>
       <h2>Dashboard</h2>
       <h3>Welcome, {auth.user.name} </h3>
       <div className="ui segment big" style={{ height: "340px" }}>
